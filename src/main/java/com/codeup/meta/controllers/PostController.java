@@ -133,25 +133,33 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class PostController {
-    @GetMapping("/posts")
+    @GetMapping(path="/posts")
     @ResponseBody
     public String posts() {
         return "posts index page";
     }
 
-    @GetMapping("/posts/{id}")
+    @GetMapping(path="/posts/{id}")
     @ResponseBody
     public String postsId(@PathVariable String id) {
         return id;
     }
-    @GetMapping("/posts/create")
+    @GetMapping(path="/posts/create")
     @ResponseBody
     public String getCreate (){
         return "view the form for creating a post";
     }
-    @PostMapping("/posts/create")
+    @PostMapping(path="/posts/create")
     @ResponseBody
     public String postCreate (){
         return "create a new post";
+    }
+    @GetMapping(path= "/posts/index")
+    public String postIndex (){
+        return "views/index";
+    }
+    @GetMapping(path= "/posts/show")
+    public String postShow (){
+        return "views/show";
     }
 }

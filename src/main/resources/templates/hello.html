@@ -5,6 +5,12 @@
     <title>Home</title>
 </head>
 <body>
+<div th:each="item : ${shoppingCart}">
+    <p th:text="${item.name}" />
+</div>
+<div class="alert alert-danger" th:if="${page_has_error}">
+    Something bad happened!
+</div>
 
 <h1>Hello, <span th:text="${name}">World</span>!</h1>
 
