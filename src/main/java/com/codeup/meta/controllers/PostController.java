@@ -153,6 +153,7 @@ public class PostController {
     @ResponseBody
     public String postCreate (){
         return "create a new post";
+        //Inside the method that shows an individual post, create a new post object and pass it to the view.
     }
     @GetMapping(path= "/posts/index")
     public String postIndex (){
