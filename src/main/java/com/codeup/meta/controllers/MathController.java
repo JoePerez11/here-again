@@ -19,4 +19,11 @@ public class MathController {
         int nums2 = Integer.parseInt(num2);
         return nums + nums2;
     }
+    @GetMapping(path = "/subtract/{num1}/from/{num2}")
+    @ResponseBody
+    public int subtractsNums(@PathVariable String num1, @PathVariable String num2){
+        int nums = Integer.parseInt(num1);
+        int nums2 = Integer.parseInt(num2);
+        return nums2 - nums;
+    }
 }
