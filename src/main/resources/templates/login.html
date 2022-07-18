@@ -1,13 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head th:fragment="head">
-    <meta charset="UTF-8" />
-    <title>Home</title>
-    <!-- include stylesheets, etc here -->
+<head th:replace="partials/header.html">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-<nav th:replace="partials/navbar">
-    <!-- awesome navbar goes here -->
-</nav>
+<div th:replace="partials/navbar.html :: navbar">
+<!--     awesome navbar goes here -->
+</div>
+<h1>Login</h1>
 </body>
-</html> 
+</html>

@@ -1,18 +1,24 @@
 package com.codeup.meta.controllers;
 
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class LoginController {
 
-    @GetMapping(path = "/")
+    @GetMapping(path= "/")
+    @ResponseBody
+    public String home(){
+        return "Congrats!";
 
-    public String main(@ModelAttribute Model model) {
-        model.addAttribute("Login Page", " more stuff");
+    }
+
+    @GetMapping(path = "/login")
+
+    public String login() {
+//        model.addAttribute("LoginPage", " more stuff");
         return "login";
     }
 }
