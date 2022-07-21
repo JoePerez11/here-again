@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MetaApplication {
+public class ctf {
 
     public static void main(String[] args) {
-        SpringApplication.run(MetaApplication.class, args);
+        SpringApplication.run(ctf.class, args);
     }
 
 }
