@@ -9,10 +9,25 @@ public class User {
     private long id;
 
     @Column(nullable = false, length = 100)
-    private String userName;
+    private String username;
 
     @Column(nullable = false)
     private String password;
+
+    public User() {
+    }
+
+    public User(long id, String username, String password) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
+
+    public User(User user) {
+        this.id = user.id;
+        this.username = user.username;
+        this.password = user.password;
+    }
 
     public long getId() {
         return id;
@@ -22,12 +37,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String userName) {
+        this.username = userName;
     }
 
     public String getPassword() {
