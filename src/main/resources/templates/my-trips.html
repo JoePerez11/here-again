@@ -1,0 +1,42 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="partials/header.html">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div th:replace="partials/navbar.html :: navbar">
+    <!--     awesome navbar goes here -->
+</div>
+<h1>Trip Catalogue</h1>
+<table>
+    <thead>
+    <tr class="headings">
+        <th class="column-title" >ID</th>
+        <th class="column-title" >Name</th>
+        <th class="column-title" >Salary</th>
+        <th class="column-title" >Status</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr class="even pointer" id="tablerow">
+        <td >1</td>
+        <td >Jim</td>
+        <td >50000</td>
+        <td >active</td>
+    </tr>
+    <tr class="even pointer" id="tablerow">
+        <td >2</td>
+        <td >Sally</td>
+        <td >50000</td>
+        <td >inactive</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
