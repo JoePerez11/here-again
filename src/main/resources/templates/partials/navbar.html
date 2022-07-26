@@ -56,7 +56,7 @@
 <!--</nav>-->
 
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>NavigationBar</title>
@@ -67,14 +67,14 @@
 <nav th:fragment="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" th:href="@{/register}">Cut Throat Fishing</a>
+            <a class="navbar-brand" th:href="@{/about-us}">Cut Throat Fishing</a>
         </div>
         <ul class="nav navbar-nav">
             <li><a class="nav-link" th:href="@{/login}">Log In</a></li>
 
-            <li><a class="nav-link" th:href="@{/trip-cat}">Trip Catalogue</a></li>
+            <li><a class="nav-link" th:href="@{/my-trips}">My Trips</a></li>
 
-            <li><a class="nav-link" th:href="@{/trip-journal}">Trip Journal</a></li>
+            <li><a class="nav-link" th:href="@{/add-trip}">Add Trip</a></li>
         </ul>
     </div>
 </nav>

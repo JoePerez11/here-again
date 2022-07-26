@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 
-    @GetMapping(path= "/")
-    @ResponseBody
-    public String home(){
-        return "Congrats!";
-
-    }
+//    @GetMapping(path= "/login")
+//    @ResponseBody
+//    public String home(){
+//        return "Congrats!";
+//
+//    }
 
     @GetMapping(path = "/login")
 

@@ -8,7 +8,7 @@ public class MyTripController {
         @GetMapping(path = "/my-trips")
 
         public String main() {
-            return "my-trip";
+            return "my-trips";
         }
     }
 
