@@ -67,14 +67,21 @@
 <nav th:fragment="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" th:href="@{/about-us}">Cut Throat Fishing</a>
+            <a class="navbar-brand" th:href="@{/index}">Cut Throat Fishing</a>
         </div>
         <ul class="nav navbar-nav">
             <li><a class="nav-link" th:href="@{/login}">Log In</a></li>
 
+            <li><a class="nav-link" th:href="@{/register}">Register</a></li>
+
             <li><a class="nav-link" th:href="@{/my-trips}">My Trips</a></li>
 
             <li><a class="nav-link" th:href="@{/add-trip}">Add Trip</a></li>
+
+            <li><a class="nav-link" th:href="@{/index}">About Us</a></li>
+
+            <li><a class="nav-link" th:href="@{/profile}">User Profile</a></li>
+
         </ul>
     </div>
 </nav>

@@ -1,5 +1,8 @@
 body{
     background:url('https://cdn.pixabay.com/photo/2018/01/09/16/11/angler-3071970_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
     padding:50px;
     object-fit: cover;
 }

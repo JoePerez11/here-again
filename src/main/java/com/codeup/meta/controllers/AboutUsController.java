@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class AboutUsController {
-    @GetMapping(path= "/")
-    @ResponseBody
+    @GetMapping(path= "/index")
     public String home(){
         return "about-us";
 
