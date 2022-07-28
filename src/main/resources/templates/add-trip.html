@@ -5,29 +5,49 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" media=”screen” />
     <title>Document</title>
 </head>
 <body>
 <div th:replace="partials/navbar.html :: navbar">
     <!--     awesome navbar goes here -->
 </div>
-<h1>Trip Journal</h1>
-<!--Cool place holder code found here   https://mdbootstrap.com/docs/standard/components/cards/-->
-<div class="card" style="width: 18rem;">
-    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="card-img-top" alt="Chicago Skyscrapers"/>
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<!--cool place holder code found here https://mdbootstrap.com/docs/standard/extended/login/-->
+<!-- Section: Design Block -->
+<section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+        background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg'); opacity: 0;
+        height: 300px;
+        "></div>
+    <!-- Background image -->
+
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+        margin-top: -100px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+        <div class="card-body py-5 px-md-5">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div>
+                        <form th:action="@{/add-trip/post}" th:method="post" th:object="${trip}">
+                            Title:
+                            <input th:field="*{title}" />
+                            <br />
+                            Description:
+                            <input th:field="*{description}" />
+                            <br />
+<!--                            <input type="submit" />-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <ul class="list-group list-group-light list-group-small">
-        <li class="list-group-item px-4">Cras justo odio</li>
-        <li class="list-group-item px-4">Dapibus ac facilisis in</li>
-        <li class="list-group-item px-4">Vestibulum at eros</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
     </div>
-</div>
+    </div>
+</section>
 </body>
 </html>

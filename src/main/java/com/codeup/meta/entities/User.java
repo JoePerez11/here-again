@@ -8,10 +8,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 20)
     private String username;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 20)
     private String password;
 
     public User() {

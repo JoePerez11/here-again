@@ -3,6 +3,7 @@ package com.codeup.meta.entities;
 import javax.persistence.*;
 
 @Entity
+//@Table(name= profile_data)
 public class ProfileData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,6 +20,7 @@ public class ProfileData {
 
     @Column(nullable = false)
     private String location;
+
 
     public ProfileData() {
     }
